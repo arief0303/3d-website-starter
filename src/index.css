@@ -32,6 +32,11 @@ body::-webkit-scrollbar-thumb {
   background-color: #555;
 }
 
+iframe {
+  width: 100vw;
+  height: 100vh;
+}
+
 .App #content {
   transition-duration: 0.3s;
 }

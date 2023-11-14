@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../assets/images/logo.svg";
 import Search from "../assets/images/search.svg";
+import { Link } from "react-router-dom";
 
 function Nav() {
     return (
@@ -8,16 +9,17 @@ function Nav() {
             <div className="nav-content">
                 <ul className="list-styled">
                     <li>
-                        <img src={Logo} alt="Logo" />
+                        <Link to="/">
+                            <img src={Logo} alt="Logo" />
+                        </Link>
                     </li>
                     <li>
-                        <a className="link-styled">Store</a>
+                        {/* <a className="link-styled">Store</a> */}
+                        <Link to="/payment" className="link-styled">Payment</Link>
                     </li>
                     <li>
-                        <a className="link-styled">About</a>
-                    </li>
-                    <li>
-                        <a className="link-styled">Contact us</a>
+                        {/* <a className="link-styled">About</a> */}
+                        <Link to="/shipment" className="link-styled">Shipment</Link>
                     </li>
                     <li>
                         <img src={Search} alt="Search" />
